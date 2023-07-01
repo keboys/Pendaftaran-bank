@@ -1,6 +1,8 @@
 #include <iostream>
 #include <stdlib.h>
 #include <cstring>
+#include <thread>
+#include <chrono>
 #define max 100
 
 using namespace std;
@@ -167,10 +169,21 @@ void hapusData(){
         }
     }
 }
+void showLoading()
+{
+    cout << "Loading";
+    for(int i = 0; i < 3; i++)
+    {
+        this_thread::sleep_for(chrono::milliseconds(500));
+        cout << ".";
+    }
+    cout << endl;
+}
 
 int main(){
     char pilihan;
     do{
+        system("cls");
         cout << "======= Pendaftaran Bank =======\n";
         cout << "Pilihan:\n";
         cout << "1. Tambah Pelanggan\n";
@@ -186,24 +199,31 @@ int main(){
 
         switch(pilihan){
             case '1':
+                showLoading();
                 tambah();
                 break;
             case '2':
+                showLoading();
                 proses();
                 break;
             case '3':
+                showLoading();
                 tampil();
                 break;
             case '4':
+                showLoading();
                 jumlah();
                 break;
             case '5':
+                showLoading();
                 cari();
                 break;
             case '6':
+                showLoading();
                 hapusData();
                 break;
             case '7':
+                showLoading();
                 clear();
                 break;
             case '8':
