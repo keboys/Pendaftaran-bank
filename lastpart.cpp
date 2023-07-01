@@ -184,17 +184,21 @@ int main(){
     char pilihan;
     do{
         system("cls");
-        cout << "======= Pendaftaran Bank =======\n";
-        cout << "Pilihan:\n";
-        cout << "1. Tambah Pelanggan\n";
-        cout << "2. Proses Pelanggan Berikutnya\n";
-        cout << "3. Tampilkan Data Pelanggan\n";
-        cout << "4. Tampilkan Jumlah Pelanggan\n";
-        cout << "5. Cari Pelanggan\n";
-        cout << "6. Hapus Data Pelanggan\n";
-        cout << "7. Hapus Semua Antrian Pelanggan\n";
-        cout << "8. Keluar\n";
-        cout << "Masukkan pilihan Anda: ";
+        cout << "==========Pendaftaran Bank ==========\n";
+        cout << "=                                   =\n";
+        cout << "=====================================\n";
+        cout << "=              Pilihan:             =\n";
+        cout << "=====================================\n";
+        cout << "    1. Tambah Pelanggan         \n";
+        cout << "    2. Proses Pelanggan Berikutnya\n";
+        cout << "    3. Tampilkan Data Pelanggan\n";
+        cout << "    4. Tampilkan Jumlah Pelanggan\n";
+        cout << "    5. Cari Pelanggan\n";
+        cout << "    6. Hapus Data Pelanggan\n";
+        cout << "    7. Hapus Semua Antrian Pelanggan\n";
+        cout << "    8. Keluar\n";
+        cout << "=====================================\n";
+        cout << "       Masukkan pilihan Anda: ";
         cin >> pilihan;
 
         switch(pilihan){
