@@ -1,6 +1,5 @@
 #include <iostream>
 #include <stdlib.h>
-#include <fstream>
 #include <cstring>
 #define max 100
 
